@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Command\ItemServico\**" />
+    <Compile Remove="Interfaces\Services\**" />
+    <Compile Remove="Notifications\ItemServico\**" />
+    <Compile Remove="Services\**" />
+    <EmbeddedResource Remove="Command\ItemServico\**" />
+    <EmbeddedResource Remove="Interfaces\Services\**" />
+    <EmbeddedResource Remove="Notifications\ItemServico\**" />
+    <EmbeddedResource Remove="Services\**" />
+    <None Remove="Command\ItemServico\**" />
+    <None Remove="Interfaces\Services\**" />
+    <None Remove="Notifications\ItemServico\**" />
+    <None Remove="Services\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entity\AspNetUserLogins.cs" />
+    <Compile Remove="Entity\AspNetUserRoles.cs" />
+    <Compile Remove="Entity\AspNetUserTokens.cs" />
+    <Compile Remove="Entity\ItemServico.cs" />
+    <Compile Remove="Entity\TipoPessoa.cs" />
+    <Compile Remove="Interfaces\Repository\IItemServicoRepository.cs" />
+    <Compile Remove="Notifications\InMemoryBus.cs" />
+    <Compile Remove="Validations\ItemServicoValidation.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="9.5.0" />
+     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.14" />
+     <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="6.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.14">
+       <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+   
+    <PackageReference Include="MediatR" Version="9.0.0" />
+   
+    <PackageReference Include="MongoDB.Bson" Version="2.12.2" />
+   
+    <PackageReference Include="MongoDB.Driver" Version="2.12.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+   <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+</Project>

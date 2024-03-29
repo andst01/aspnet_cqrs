@@ -1,0 +1,103 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="EventSourcing\**" />
+    <Compile Remove="Migrations\**" />
+    <EmbeddedResource Remove="EventSourcing\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <None Remove="EventSourcing\**" />
+    <None Remove="Migrations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Context\EventStoreSqlContext.cs" />
+    <Compile Remove="Mappings\ReservaMap.cs" />
+    <Compile Remove="Repository\ItemServicoRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Dapper" Version="2.0.78" />
+    <PackageReference Include="Dapper.SqlBuilder" Version="2.0.78" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="6.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.14">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="MongoDB.Bson" Version="2.12.2" />
+    <PackageReference Include="MongoDB.Driver" Version="2.12.2" />
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.12.2" />
+   
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SGAS.Domain\SGAS.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Anderson Tavares\.nuget\packages\mongodb.driver.core\2.12.2\build\../runtimes/win/native/libzstd.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Anderson Tavares\.nuget\packages\mongodb.driver.core\2.12.2\build\../runtimes/win/native/snappy32.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Anderson Tavares\.nuget\packages\mongodb.driver.core\2.12.2\build\../runtimes/win/native/snappy64.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Anderson Tavares\.nuget\packages\mongodb.driver.core\2.12.2\build\../runtimes/win/native/libzstd.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Anderson Tavares\.nuget\packages\mongodb.driver.core\2.12.2\build\../runtimes/win/native/snappy32.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Anderson Tavares\.nuget\packages\mongodb.driver.core\2.12.2\build\../runtimes/win/native/snappy64.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Anderson Tavares\.nuget\packages\mongodb.driver.core\2.12.2\build\../runtimes/win/native/snappy32.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Anderson Tavares\.nuget\packages\mongodb.driver.core\2.12.2\build\../runtimes/win/native/libzstd.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Anderson Tavares\.nuget\packages\mongodb.driver.core\2.12.2\build\../runtimes/win/native/libzstd.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="EventSourcing\SqlEventStore.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\ander\.nuget\packages\mongodb.driver.core\2.12.2\build\../runtimes/win/native/libzstd.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\ander\.nuget\packages\mongodb.driver.core\2.12.2\build\../runtimes/win/native/snappy32.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\ander\.nuget\packages\mongodb.driver.core\2.12.2\build\../runtimes/win/native/snappy64.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\ander\.nuget\packages\mongodb.driver.core\2.12.2\build\../runtimes/win/native/snappy32.dll" />
+  </ItemGroup>
+
+</Project>

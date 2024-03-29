@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AutoMapper\**" />
+    <EmbeddedResource Remove="AutoMapper\**" />
+    <None Remove="AutoMapper\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="BaseApp.cs" />
+    <Compile Remove="Interfaces\IItemServicoApp.cs" />
+    <Compile Remove="Interfaces\IUnitOfWorkApp.cs" />
+    <Compile Remove="ItemServicoApp.cs" />
+    <Compile Remove="UnitOfWorkApp.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SGAS.Domain\SGAS.Domain.csproj" />
+    <ProjectReference Include="..\SGAS.Infra\SGAS.Infra.csproj" />
+  </ItemGroup>
+
+</Project>

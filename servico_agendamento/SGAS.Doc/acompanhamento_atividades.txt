@@ -1,0 +1,2 @@
+24/05/2022 - Verficar as entidades e banco de dados criar digrama de classe de atividade e sequencia
+25/05/2022 - Criação do modelo de Classe
